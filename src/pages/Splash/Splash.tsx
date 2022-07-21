@@ -3,6 +3,7 @@ import * as React from "react";
 import Button from "../../components/Button/Button";
 import Link from "../../components/Link/Link";
 import jeffPhoto from "./jeff.jpg";
+import resume from "./resume.pdf";
 import "./Splash.less";
 
 const Splash: React.FC = () => {
@@ -17,7 +18,7 @@ const Splash: React.FC = () => {
 						<Link>About</Link>
 						<Link>Skills</Link>
 						<Link>Experience</Link>
-						<Button lifted>Resume</Button>
+						<Button lifted href={resume}>Resume</Button>
 					</nav>
 					<div id="name-container">
 						<div id="name-description">

@@ -5,12 +5,13 @@ import "./Button.less";
 
 type ButtonProps = {
 	children: React.ReactNode,
+	href?: string,
 	lifted?: boolean,
 	onClick?: () => void
 };
 
-const Button: React.FC<ButtonProps> = ({ children, lifted, onClick }) => {
-	return <button className={`Button ${lifted ? "lifted" : ""}`} onClick={onClick}>{children}</button>;
+const Button: React.FC<ButtonProps> = ({ children, href, lifted, onClick }) => {
+	return <a className={`Button ${lifted ? "lifted" : ""}`} href={href} onClick={onClick}>{children}</a>;
 };
 
 export default Button;

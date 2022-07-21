@@ -20,7 +20,7 @@ module.exports = {
 				use: ["style-loader", "css-loader", "less-loader"]
 			},
 			{
-				test: /\.(jpe?g|png|gif)$/,
+				test: /\.(jpe?g|png|gif|pdf)$/,
 				loader: "file-loader"
 			}
 		]
