@@ -1,0 +1,25 @@
+.Button {
+	background-color: var(--theme-blue);
+	border: none;
+	border-radius: 5px;
+	color: white;
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	padding: 10px 10px;
+
+	&.lifted {
+		box-shadow: -3px 4px var(--theme-orange);
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+		&:hover {
+			transform: translate(-1px, 1px);
+			box-shadow: -2px 3px var(--theme-orange);
+		}
+
+		&:active {
+			transform: translate(-2px, 3px);
+			box-shadow: -1px 1px var(--theme-orange);
+		}
+	}
+}
