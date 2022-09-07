@@ -1,0 +1,57 @@
+.Index {
+	background: radial-gradient(#D2D6DB 1px, transparent 0px) -2.5px -2.5px / 10px 10px var(--off-white);
+	font-family: 'Roboto', sans-serif;
+
+	section {
+		display: flex;
+		flex-flow: row nowrap;
+		height: 100vh;
+
+		.left-container, .right-container {
+			margin: 0 20px;
+			width: 50%;
+		}
+	}
+
+	/* -- DEFAULT TEXT DECORATORS -- */
+
+	h1 {
+		color: var(--off-black);
+		font-weight: 300;
+		font-size: 3rem;
+	}
+
+	h2 {
+		color: var(--off-black);
+		font-weight: 300;
+		font-size: 2rem;
+	}
+
+	strong {
+		font-weight: 700;
+	}
+
+	span {
+		&.theme-blue {
+			color: var(--theme-blue);
+		}
+
+		&.theme-orange {
+			color: var(--theme-orange);
+		}
+
+		&.theme-red {
+			color: var(--theme-red);
+		}
+
+		&.theme-green {
+			color: var(--theme-green);
+		}
+
+		&.theme-navy {
+			color: var(--theme-navy);
+		}
+	}
+
+	/* -- END DEFAULT TEXT DECORATORS */
+}
