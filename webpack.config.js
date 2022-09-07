@@ -16,6 +16,30 @@ module.exports = {
 				loader: "babel-loader"
 			},
 			{
+				test: /\.scss$/,
+				use: [
+					{
+						loader: "style-loader"
+					},
+					{
+						loader: "css-loader"
+					},
+					{
+						loader: "postcss-loader",
+						options: {
+							postcssOptions: {
+								plugins: () => [
+									require("autoprefixer")
+								]
+							}
+						}
+					},
+					{
+						loader: "sass-loader"
+					}
+				]
+			},
+			{
 				test: /\.less$/,
 				use: ["style-loader", "css-loader", "less-loader"]
 			},
