@@ -11,15 +11,14 @@ const About: React.FC = () => {
 	return (
 		<section className="row vh-100" id="about">
 			<div className="col">
-				<h1 className="underline">About Me</h1>
+				<h1 className="fw-bold width-auto underline">About Me</h1>
 				<p>
-					My name is <strong>Jeff Shelton</strong>. I'm a software developer, designer, aspiring entrepreneur, and student at the <span className="theme-navy"><strong>Georgia Institute of Technology</strong></span> majoring in <strong>computer science</strong>. I love both technology and people
+					My name is <span className="fw-bold">Jeff Shelton</span>. I'm a software developer, designer, aspiring entrepreneur, and student at the <span className="text-navy"><strong>Georgia Institute of Technology</strong></span> majoring in <strong>computer science</strong>. I love both technology and people
 				</p>
 			</div>
 			<div className="col">
 				<Collage radius="3em" center={beachPhoto} outer={[graduationPhoto, suitPhoto, seniorPhoto, promPhoto]} />
 			</div>
-			<p></p>
 		</section>
 	);
 };

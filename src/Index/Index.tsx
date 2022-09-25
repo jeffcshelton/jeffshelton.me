@@ -2,23 +2,29 @@ import { createRoot } from "react-dom/client";
 import * as React from "react";
 
 import Splash from "../sections/Splash";
-import About from "../sections/About";
-import Skills from "../sections/Skills";
-import Experience from "../sections/Experience";
-import Projects from "../sections/Projects";
+import WIP from "../sections/WIP";
 
-import * as bootstrap from "bootstrap";
+// import Skills from "../sections/Skills";
+// import Jobs from "../sections/Jobs";
+// import Projects from "../sections/Projects";
+
+import * as _ from "bootstrap";
 import "../scss/styles.scss";
-
-// import "./Index.less";
 
 const Index: React.FC = () => {
 	return (
 		<main className="container-fluid dotted">
 			<Splash />
-			<About />
-			<Skills />
-			<Experience />
+			<WIP />
+			{/* <div className="row vh-100">
+				<div className="col">
+					<Skills />
+				</div>
+				<div className="col">
+					<Jobs />
+					<Projects />
+				</div>
+			</div> */}
 		</main>
 	);
 };
