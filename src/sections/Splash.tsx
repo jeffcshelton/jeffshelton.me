@@ -14,7 +14,7 @@ const Splash: React.FC = () => {
 				<img src={jeffPhoto} className="shadow rounded" />
 			</div>
 			<div className="col d-flex flex-column flex-nowrap">
-				<nav className="d-flex justify-content-end align-items-center mt-4">
+				<nav className="d-flex justify-content-end align-items-center mt-5 me-5">
 					<a href="https://apps.apple.com/us/developer/jeffrey-shelton/id1613354979" className="nav-icon"><img src={appStoreIcon} /></a>
 					<a href="https://www.linkedin.com/in/jeffcshelton" className="nav-icon"><img src={linkedinIcon} /></a>
 					<a href="https://github.com/jeffcshelton" className="nav-icon"><img src={githubIcon} /></a>
