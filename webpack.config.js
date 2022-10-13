@@ -44,8 +44,13 @@ module.exports = {
 				use: ["style-loader", "css-loader", "less-loader"]
 			},
 			{
-				test: /\.(jpe?g|png|gif|pdf)$/,
+				test: /\.(jpe?g|png|gif)$/,
 				loader: "file-loader"
+			},
+			{
+				test: /\.pdf$/,
+				loader: "file-loader",
+				options: { name: "[name].[ext]" }
 			}
 		]
 	},
